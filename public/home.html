@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <header>         
+        <h1>Guess The Name</h1>
+        <div id="header">
+            <nav>
+                <button class="navkeys" id="first"><a href="home.html">Home</a></button>
+                <button class="navkeys" id="second"><a href="riddle.html">Riddle</a></button>
+                <button class="navkeys" id="third"><a href="comments.html">Comments</a></button>
+                <button class="navkeys" id="fourth"><a href="journal.html">Journal</a></button>
+                <button class="navkeys" id="fifth"><a href="about.html">About</a></button>
+                <button class="navkeys" id="sixth"><a href="help.html">Help</a></button>
+            </nav>
+        </div>
+    </header>
+    <main class="homeMain">
+        <section class="content">
+            <div class="guessing">
+                <div class="homeContent">
+                    <form class='letters' id="firstletter">
+                        <p>First Letter</p>
+                        <input class="firstinput">
+                        <button class="submit1">-></button>
+                    </form>
+                    <form class='letters' id="secondletter">
+                        <p>Second Letter</p>
+                        <input class="secondinput">
+                        <button class="submit">-></button>
+                    </form>
+                    <form class='letters' id="thirdletter">
+                        <p>Third Letter</p>
+                        <input class="thirdinput">
+                        <button class="submit">-></button>
+                    </form>
+                    <form class='letters' id="fourthletter">
+                        <p>Fourth Letter</p>
+                        <input class="fourthinput">
+                        <button class="submit">-></button>
+                    </form>
+                    <form class='letters' id="fifthletter">
+                        <p>Fifth Letter</p>
+                        <input class="fifthinput">
+                        <button class="submit">-></button>
+                    </form>
+                    <form class='letters' id="sixthletter">
+                        <p>Sixth Letter</p>
+                        <input class="sixthinput">
+                        <button class="submit">-></button>
+                    </form>
+                    <h3>What's His Name?</h3>
+                    <p class="gamedesc">If you guess his name, he goes free! As a show of good faith, I'll give you the first letter, A. I'd REALLY advise against getting letters wrong, for his sake. Each Page will have a letter, if you can figure out where to find it!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class='helpfooter'>Need Help?</div>
+        <button id='helpbutton'><a href="help.html">Get Help</a></button>
+        </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="homefunctions.js"></script>   
+</body>
+</html>

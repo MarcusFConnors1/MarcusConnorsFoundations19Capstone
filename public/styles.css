@@ -1,0 +1,415 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+}
+body {
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  background-color: #706C61
+}
+  img {
+    height: 100vh;
+    width: 100vw
+  }
+  header {
+    width: 100%;
+    height: 100px;
+    color: red;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  header h1 {
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  header button{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+    }
+    header button:hover{
+      cursor: pointer;
+      transform: scale(1.05, 1.05);
+      background-color: #303030;
+    }
+    @media all and (max-width:30em){
+    header button{
+    display:block;
+    margin:0.4em auto;
+    }
+    }
+  
+  button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  input {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  main {
+    background-color: #706C61;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .lost {
+    padding-top: 200px;
+  }
+  .guessing {
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .guessing1 {
+    padding-top: 20vh;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .homeContent {
+    width: 25vw;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  .letters {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .letters input {
+    width: 100px;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  .letters input:hover{
+      cursor: pointer;
+      transform: scale(1.05, 1.05);
+      background-color: #D5D5D5;
+  }
+  .letters button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  .letters button:hover{
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    background-color: #D5D5D5;
+  }
+  .letters p {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  .homeMain {
+    background-image: url("/smileyFace1.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+  .riddleContent {
+    height: 30vh;
+    display: flexbox;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+    margin: auto;
+    width: 50%;
+    padding: 100px;
+  }
+  .riddleContent form {
+    padding: 100px
+  }
+  .riddleContent input {
+    margin: 50px;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  .riddleContent input:hover{
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    background-color: #D5D5D5;
+  }
+  .riddleContent button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  .riddleContent button:hover{
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    background-color: #D5D5D5;
+  }
+  h1 {
+    margin-left: 30px;
+   
+    font-size: 70px;
+  }
+  
+  h1:hover {
+    cursor: pointer;
+    color: white;
+    transition: 2s;
+  }
+  
+  button {
+    font-size: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 65%;
+    right: 3%;
+  }
+  .navkeys {
+      background-color: white;
+  }
+  .navkeys:hover {
+   cursor: pointer;
+   transform: scale(1.1, 1.1);
+   color: #CC444B;
+  }
+  a {
+      color: red
+  }
+  main {
+    color: red;
+    font-size: 20px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .commentsContainer {
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  .journalContent {
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+    justify-content: space-between;
+  }
+  .aboutContent {
+    display: flexbox;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+    margin: auto;
+    width: 50%;
+    padding: 50px;
+  }
+  .helpContent {
+    display: flexbox;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+    margin: auto;
+    width: 50%;
+    padding: 50px;
+    justify-content: space-between;
+  }
+  .fifthLetterButton {
+    color: pink;
+  }
+  footer {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    height: 50px;
+  }
+  .helpfooter {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: red
+  }
+  #helpbutton {
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    background-color: white;
+    text-align:center;
+    transition: all 0.2s;
+    display: flex;
+    position: absolute;
+    right: 5px;
+    margin-top: 5px;
+  }
+  #helpbutton:hover {
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    background-color: #303030;
+  }
+
+  .journalContent {
+    display: flex;
+  }
+  .journalDiv {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
